@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa do Amor</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="jogo-container">
+    <h1 class="titulo-jogo">Mini-Jogos</h1>
+    <p>Jogue comigo e desbloqueie uma surpresinha 🌹</p>
+
+    <div class="grid-jogo">
+  <div class="jogo-wrapper"><a href="memoria.html"><div class="bloco-jogo"><img src="https://i.ibb.co/wFzMRydb/Chat-GPT-Image-26-de-jul-de-2025-20-05-25.png" alt="Jogo da Memória" class="icone-jogo"></div></a><div class="titulo-jogo-bloco">Jogo da Memória</div></div>
+  <div class="jogo-wrapper"><a href="wordle.html"><div class="bloco-jogo"><img src="https://i.ibb.co/397pqyy4/Chat-GPT-Image-26-de-jul-de-2025-08-17-47.png" alt="Wordle do Amor" class="icone-jogo"></div></a><div class="titulo-jogo-bloco">Wordle do Amor</div></div>
+  <div class="jogo-wrapper"><div class="bloco-jogo"><img src="https://i.ibb.co/SwCWt1p2/Chat-GPT-Image-26-de-jul-de-2025-08-58-03.png" alt="Labirinto do Casal" class="icone-jogo"></div><div class="titulo-jogo-bloco">Labirinto do Casal</div></div>
+  <div class="jogo-wrapper"><div class="bloco-jogo"><img src="https://i.ibb.co/5gsbgyfY/Chat-GPT-Image-26-de-jul-de-2025-18-52-22.png" alt="Mural de Sentimentos" class="icone-jogo"></div><div class="titulo-jogo-bloco">Mural de Sentimentos</div></div>
+</div>
+
+<!-- Bloco da recompensa isolado -->
+<div class="recompensa-container">
+  <div class="bloco-jogo bloqueado">🔒<br><span>Receber<br>Recompensa</span></div>
+</div>
+
+<div class="barra-vida">
+  <div class="coracao">❤️</div>
+  <div class="barra">
+    <div class="preenchimento" id="vidaPreenchida"></div>
+    <div class="divisao-extra"></div>
+  </div>
+  <div class="vida-label">Vida do Amor</div>
+</div>
+
+
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>atualizarBarraDeVida();</script>
+
+<div class="botoes-acoes">
+  <button onclick="voltarMenu()">↩️ Voltar</button>
+  <button onclick="resetarProgresso()">🗑️ Resetar Progresso</button>
+</div>
+
+
+  <footer class="assinatura">
+  Made by: Seu mo, Nana.. 
+  <img src="https://i.ibb.co/TxKKPkm2/Chat-GPT-Image-26-de-jul-de-2025-05-35-44.png" alt="coração pixelado" width="22" style="vertical-align: middle;">
+</footer>
+
+</body>
+</html>
