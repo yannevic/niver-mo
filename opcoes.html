@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Opções</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu-container">
+            <h1>Opções</h1>
+
+            <div class="opcoes-menu">
+                <div class="menu-opcao" onclick="abrirSom()">🔊 Som</div>
+                <div class="menu-opcao" onclick="abrirIdiomas()">🌐 Idioma</div>
+                <div class="menu-opcao" onclick="voltar()">↩️ Voltar</div>
+            </div>
+
+            <!-- Overlay Som -->
+            <div id="overlay-som" class="overlay" style="display: none;">
+                <div id="janela-som" class="janela-config">
+                    <div class="titulo-janela">Volume</div>
+                    <input type="range" min="0" max="100" value="50" class="slider-fake">
+                    <div class="menu-opcao" onclick="alert('Na verdade não tem som não..')">✅ Aplicar</div>
+                    <div class="menu-opcao" onclick="fecharJanelas()">❌ Voltar</div>
+                </div>
+            </div>
+
+            <!-- Overlay Idiomas -->
+            <div id="overlay-idiomas" class="overlay" style="display: none;">
+                <div id="janela-idiomas" class="janela-config">
+                    <div class="titulo-janela">Escolha um idioma</div>
+                    <div class="menu-opcao" onclick="alert('Sorry, we don’t have this translation! 😅')">🇺🇸 English
+                    </div>
+                    <div class="menu-opcao" onclick="alert('Désolé, nous n’avons pas cette traduction ! 😅')">🇫🇷
+                        Français</div>
+                    <div class="menu-opcao" onclick="alert('¡Lo siento, no tenemos esta traducción! 😅')">🇪🇸 Español
+                    </div>
+                    <div class="menu-opcao" onclick="alert('申し訳ありませんが、この翻訳はありません。')">🇯🇵 日本語</div>
+                    <div class="menu-opcao" onclick="alert('É.. já tá em português.. 💖')">🇧🇷 Português</div>
+                    <div class="menu-opcao" onclick="fecharJanelas()">❌ Voltar</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function abrirSom() {
+            document.getElementById("overlay-som").style.display = "flex";
+            document.getElementById("overlay-idiomas").style.display = "none";
+        }
+
+        function abrirIdiomas() {
+            document.getElementById("overlay-idiomas").style.display = "flex";
+            document.getElementById("overlay-som").style.display = "none";
+        }
+
+        function fecharJanelas() {
+            document.getElementById("overlay-som").style.display = "none";
+            document.getElementById("overlay-idiomas").style.display = "none";
+        }
+
+        function voltar() {
+            window.location.href = "menu.html";
+        }
+
+    </script>
+
+    <canvas id="confetti"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <footer class="assinatura">
+        Made by: Seu mo, Nana..
+        <img src="https://i.ibb.co/TxKKPkm2/Chat-GPT-Image-26-de-jul-de-2025-05-35-44.png" alt="coração pixelado"
+            width="22" style="vertical-align: middle;">
+    </footer>
+
+</body>
+
+</html>
